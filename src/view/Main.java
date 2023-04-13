@@ -1,5 +1,7 @@
 package view;
 
+import javax.swing.JOptionPane;
+
 import controlle.FatController;
 
 public class Main 
@@ -9,7 +11,7 @@ public class Main
 	{
 		FatController pilha = new FatController();
 		
-		pilha.fat(5);
+		pilha.fat(Integer.parseInt(JOptionPane.showInputDialog("Digite um valor de 0 a 10!")));
 		
 		
 	}
